@@ -8,3 +8,9 @@ Como precisarei entregar algo que ponha em prática os conceitos aprendidos dura
 **Sobre**
 
 Este projeto será um website que servirá para que o cliente divulgue os seus serviços e também possa obter orçamentos de seus clientes pela página.
+
+**Principais tecnologias**
+
+- Linguagem principal: Java
+- Frameworks: Primefaces(JSF), Hibernate(JPA) 
+- Base de dados: MySQL
