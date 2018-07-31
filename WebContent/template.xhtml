@@ -7,18 +7,25 @@
 	xmlns:ui="http://java.sun.com/jsf/facelets">
 <h:head>
 	<title>Vendela</title>
-	<link rel="shortcut icon" type="image/x-icon" href="resources/images/favicon2.ico" />
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+	<style>
+.logomarca {
+	width: 17%;
+	height: auto;
+}
+</style>
 </h:head>
 <h:body>
-<h:form id="menu">
-	<p:menubar>
-		<p:menuitem value="Home" url="index.jsf"></p:menuitem>
-		<p:menuitem value="Clientes"></p:menuitem>
-		<p:menuitem value="Serviços"></p:menuitem>
-		<p:menuitem value="Sobre"></p:menuitem>
-		<p:menuitem value="Fale conosco"></p:menuitem>
-	</p:menubar>
-</h:form>
+	<h:graphicImage styleClass="logomarca" value="images/vendela-logo.png"></h:graphicImage>
+	<h:form id="menu">
+		<p:menubar>
+			<p:menuitem value="Home" url="index.jsf"></p:menuitem>
+			<p:menuitem value="Clientes"></p:menuitem>
+			<p:menuitem value="Serviços"></p:menuitem>
+			<p:menuitem value="Sobre"></p:menuitem>
+			<p:menuitem value="Fale conosco"></p:menuitem>
+		</p:menubar>
+	</h:form>
 	<ui:insert></ui:insert>
 </h:body>
 </html>
