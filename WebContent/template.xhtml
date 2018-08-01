@@ -6,26 +6,43 @@
 	xmlns:p="http://primefaces.org/ui"
 	xmlns:ui="http://java.sun.com/jsf/facelets">
 <h:head>
-	<title>Vendela</title>
+	<title>Vendela - Serviços</title>
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 	<style>
 .logomarca {
 	width: 17%;
 	height: auto;
 }
+
+#teste {
+	text-align: center;
+}
 </style>
 </h:head>
 <h:body>
-	<h:graphicImage styleClass="logomarca" value="images/vendela-logo.png"></h:graphicImage>
-	<h:form id="menu">
-		<p:menubar>
-			<p:menuitem value="Home" url="index.jsf"></p:menuitem>
-			<p:menuitem value="Clientes"></p:menuitem>
-			<p:menuitem value="Serviços"></p:menuitem>
-			<p:menuitem value="Sobre"></p:menuitem>
-			<p:menuitem value="Fale conosco"></p:menuitem>
-		</p:menubar>
-	</h:form>
-	<ui:insert></ui:insert>
+	<p:layout fullPage="true">
+
+		<p:layoutUnit styleClass="header" position="north" size="100%"
+			resizable="true">
+			<h:graphicImage styleClass="logomarca"
+				value="images/vendela-logo.png"></h:graphicImage>
+			<h:form styleClass="menu">
+				<p:menubar>
+					<p:menuitem value="Home" url="index.jsf"></p:menuitem>
+					<p:menuitem value="Clientes" url="clientes.jsf"></p:menuitem>
+					<p:menuitem value="Serviços" url="servicos.jsf"></p:menuitem>
+					<p:menuitem value="Sobre" url="sobre.jsf"></p:menuitem>
+					<p:menuitem value="Fale conosco" url="contato.jsf"></p:menuitem>
+				</p:menubar>
+			</h:form>
+		</p:layoutUnit>
+		<p:layoutUnit styleClass="body" position="center">
+			<ui:insert></ui:insert>
+		</p:layoutUnit>
+		<p:layoutUnit styleClass="footer" position="south" size="100"
+			header="Vendela" resizable="true">
+			<p id="teste">Copyright 2018 - Vendela</p>
+		</p:layoutUnit>
+	</p:layout>
 </h:body>
 </html>
