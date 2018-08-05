@@ -8,8 +8,6 @@
 <h:head>
 	<title>Vendela - Serviços</title>
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
-	<link rel="stylesheet"
-		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 	<style>
 .logomarca {
 	width: 17%;
@@ -32,7 +30,7 @@
 </h:head>
 <h:body>
 	<p:layout fullPage="true">
-		<p:layoutUnit styleClass="body" position="center">
+		<p:layoutUnit styleClass="body" position="center" resizable="true">
 			<h:graphicImage styleClass="logomarca"
 				value="images/vendela-logo.png"></h:graphicImage>
 			<h:form styleClass="menu">
@@ -46,7 +44,7 @@
 			</h:form>
 			<ui:insert></ui:insert>
 		</p:layoutUnit>
-		<p:layoutUnit styleClass="footer" position="south" size="75">
+		<p:layoutUnit styleClass="footer" position="south" size="75" resizable="true">
 			<p id="teste">&copy; Copyright 2018 - Vendela</p>
 		</p:layoutUnit>
 	</p:layout>
