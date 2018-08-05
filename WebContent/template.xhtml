@@ -8,10 +8,21 @@
 <h:head>
 	<title>Vendela - Serviços</title>
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 	<style>
 .logomarca {
 	width: 17%;
 	height: auto;
+}
+
+.ui-layout-pane-center.ui-widget-content {
+	border: 0;
+	border-radius: 0px;
+}
+
+.ui-layout-pane-south.ui-widget-content {
+	border-radius: 0px;
 }
 
 #teste {
@@ -21,9 +32,7 @@
 </h:head>
 <h:body>
 	<p:layout fullPage="true">
-
-		<p:layoutUnit styleClass="header" position="north" size="100%"
-			resizable="true">
+		<p:layoutUnit styleClass="body" position="center">
 			<h:graphicImage styleClass="logomarca"
 				value="images/vendela-logo.png"></h:graphicImage>
 			<h:form styleClass="menu">
@@ -35,13 +44,10 @@
 					<p:menuitem value="Fale conosco" url="contato.jsf"></p:menuitem>
 				</p:menubar>
 			</h:form>
-		</p:layoutUnit>
-		<p:layoutUnit styleClass="body" position="center">
 			<ui:insert></ui:insert>
 		</p:layoutUnit>
-		<p:layoutUnit styleClass="footer" position="south" size="100"
-			header="Vendela" resizable="true">
-			<p id="teste">Copyright 2018 - Vendela</p>
+		<p:layoutUnit styleClass="footer" position="south" size="75">
+			<p id="teste">&copy; Copyright 2018 - Vendela</p>
 		</p:layoutUnit>
 	</p:layout>
 </h:body>
