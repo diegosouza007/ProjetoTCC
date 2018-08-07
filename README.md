@@ -7,7 +7,9 @@ Como precisarei entregar algo que ponha em prática os conceitos aprendidos dura
 
 **Sobre**
 
-Este projeto será um website que servirá para que o cliente divulgue os seus serviços e também possa obter orçamentos de seus clientes a partir de uma página de contatos que armazenará as informações em um banco de dados.
+Este projeto será um website que servirá para que o cliente divulgue os seus serviços e também possa obter orçamentos de seus clientes a partir de uma página de contatos(Fale conosco) que irá armazenar todas as informações em um banco de dados.
+
+O site terá um painel administrativo para que o usuário consiga ver em uma lista todos os visitantes que entraram em seu site e que deixaram o seus contatos, sendo assim ele possuirá um controle sobre seus leads.
 
 **Principais tecnologias**
 
