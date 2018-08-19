@@ -15,4 +15,4 @@ O site terá um painel administrativo para que o usuário consiga ver em uma lis
 
 - Linguagem principal: Java
 - Frameworks: Primefaces(JSF), Hibernate(JPA) 
-- Base de dados: MySQL
+- Base de dados: PostgreSQL
