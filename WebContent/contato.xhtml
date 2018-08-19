@@ -6,6 +6,35 @@
 	xmlns:p="http://primefaces.org/ui"
 	xmlns:ui="http://java.sun.com/jsf/facelets" template="template.xhtml">
 
-<h1>Fale conosco</h1>
+	<style>
+.conosco {
+	text-align: center;
+}
+</style>
 
+	<h1 class="conosco">Fale conosco</h1>
+
+	<h:form>
+		<h:panelGrid columns="2" cellpadding="5">
+			<p>Nome:</p>
+			<p:inputText />
+
+			<p>Empresa:</p>
+			<p:inputText />
+
+			<p>E-mail:</p>
+			<p:inputText />
+
+			<p:outputLabel value="Telefone:" />
+			<p:inputMask id="phone" mask="(99) 99999-9999" />
+
+			<p>Mensagem</p>
+			<p:inputTextarea rows="5" cols="50" counter="display" maxlength="120"
+				counterTemplate="{0} Caracteres restantes." autoResize="false" />
+			<h:outputText id="display" />
+
+		</h:panelGrid>
+
+		<p:commandButton value="Enviar" action="sobre.xhtml"></p:commandButton>
+	</h:form>
 </ui:decorate>
